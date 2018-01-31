@@ -17,6 +17,9 @@ import {
 // Import theme
 import createTheme from "spectacle/lib/themes/default";
 
+// Import images
+import whatisit from '../assets/whatisit.gif';
+
 // Require CSS
 require("normalize.css");
 
@@ -34,23 +37,22 @@ export default class Presentation extends React.Component {
   render() {
     return (
       <Deck transition={["zoom", "slide"]} transitionDuration={500} theme={theme}>
+
         <Slide transition={["zoom"]} bgColor="primary">
           <Heading size={1} fit caps lineHeight={1} textColor="secondary">
-            Spectacle Boilerplate
+            Choosing a React Component Library
           </Heading>
-          <Text margin="10px 0 0" textColor="tertiary" size={1} fit bold>
-            open the presentation/index.js file to get started
-          </Text>
+          <Cite>Matthew Holman</Cite>
         </Slide>
-        <Slide transition={["fade"]} bgColor="tertiary">
-          <Heading size={6} textColor="primary" caps>Typography</Heading>
-          <Heading size={1} textColor="secondary">Heading 1</Heading>
-          <Heading size={2} textColor="secondary">Heading 2</Heading>
-          <Heading size={3} textColor="secondary">Heading 3</Heading>
-          <Heading size={4} textColor="secondary">Heading 4</Heading>
-          <Heading size={5} textColor="secondary">Heading 5</Heading>
-          <Text size={6} textColor="secondary">Standard text</Text>
+
+        <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
+          <Heading size={1} textColor="primary">Component Library?</Heading>
+          <BlockQuote>
+            <Quote>A collection of components, organised in a meaningful manner, and often (but not necessarily) providing some way to browse and preview those components and their associated assets.</Quote>
+            <Cite>Mark Perkins</Cite>
+          </BlockQuote>
         </Slide>
+
         <Slide transition={["fade"]} bgColor="primary" textColor="tertiary">
           <Heading size={6} textColor="secondary" caps>Standard List</Heading>
           <List>
@@ -60,12 +62,14 @@ export default class Presentation extends React.Component {
             <ListItem>Item 4</ListItem>
           </List>
         </Slide>
+
         <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
           <BlockQuote>
             <Quote>Example Quote</Quote>
             <Cite>Author</Cite>
           </BlockQuote>
         </Slide>
+
       </Deck>
     );
   }

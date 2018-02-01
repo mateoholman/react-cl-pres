@@ -20,6 +20,8 @@ import createTheme from "spectacle/lib/themes/default";
 // Import images
 import confused from '../assets/confusedgirl.gif';
 import ss1 from '../assets/screenshot1.jpg';
+import confusedfez from '../assets/confusedfez.gif';
+import bootstrap from '../assets/bootstrap.svg';
 
 // Require CSS
 require("normalize.css");
@@ -55,11 +57,45 @@ export default class Presentation extends React.Component {
           <img src={ss1} width="930px" height="540px" />
         </Slide>
 
-        <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
-          <BlockQuote>
-            <Quote>Example Quote</Quote>
-            <Cite>Author</Cite>
-          </BlockQuote>
+        <Slide transition={["fade"]} bgColor="primary" textColor="secondary">
+          <Heading size={4} textColor="secondary">But Why?</Heading>
+          <List>
+            <ListItem>Speed-up UI development</ListItem>
+            <ListItem>Minimize decision fatigue</ListItem>
+            <ListItem>Ship your product faster</ListItem>
+            <ListItem>Help with readable / maintainable code</ListItem>
+          </List>
+        </Slide>
+
+        <Slide transition={["fade"]} bgColor="primary" textColor="secondary">
+          <Heading size={4} textColor="secondary">Where do we start?</Heading>
+          <img src={confusedfez} />
+        </Slide>
+
+        <Slide transition={["fade"]} bgColor="primary" textColor="secondary">
+          <Heading size={4} textColor="secondary">Bootstrap!</Heading>
+          <img src={bootstrap} height="200px" width="200px" />
+        </Slide>
+
+        <Slide transition={["fade"]} bgColor="primary" textColor="secondary">
+          <Table>
+            <TableHeader>
+              <TableRow>
+                <TableHeaderItem>react-bootstrap</TableHeaderItem>
+                <TableHeaderItem>reactstrap</TableHeaderItem>
+              </TableRow>
+            </TableHeader>
+            <TableBody>
+              <TableRow>
+                <TableItem>None</TableItem>
+                <TableItem>61.8%</TableItem>
+              </TableRow>
+              <TableRow>
+                <TableItem>jQuery</TableItem>
+                <TableItem>28.3%</TableItem>
+              </TableRow>
+            </TableBody>
+          </Table>
         </Slide>
 
       </Deck>

@@ -19,6 +19,7 @@ import createTheme from "spectacle/lib/themes/default";
 
 // Import images
 import confused from '../assets/confusedgirl.gif';
+import ss1 from '../assets/screenshot1.jpg';
 
 // Require CSS
 require("normalize.css");
@@ -50,8 +51,8 @@ export default class Presentation extends React.Component {
           <img src={confused} />
         </Slide>
 
-        <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
-          <Heading size={6} textColor="primary">**Add a screenshot of a component library here to explain.**</Heading>
+        <Slide transition={["fade"]} align="center" bgColor="secondary" textColor="primary">
+          <img src={ss1} width="930px" height="540px" />
         </Slide>
 
         <Slide transition={["fade"]} bgColor="secondary" textColor="primary">

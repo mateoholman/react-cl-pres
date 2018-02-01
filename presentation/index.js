@@ -3,19 +3,14 @@ import React from "react";
 
 // Import Spectacle Core tags
 import {
-  BlockQuote,
-  Cite,
-  Deck,
-  Heading,
-  ListItem,
-  List,
-  Quote,
-  Slide,
-  Text
+  BlockQuote, Cite, Deck, Heading, ListItem, List, Quote, Slide, Table, TableHeader, TableRow, TableHeaderItem, TableItem, TableBody, Text
 } from "spectacle";
 
 // Import theme
 import createTheme from "spectacle/lib/themes/default";
+
+// Import slides
+import bootstrapSlides from "./bootstrap";
 
 // Import images
 import confused from '../assets/confusedgirl.gif';
@@ -40,7 +35,6 @@ export default class Presentation extends React.Component {
   render() {
     return (
       <Deck transition={["zoom", "slide"]} transitionDuration={500} theme={theme}>
-
         <Slide transition={["zoom"]} bgColor="primary">
           <Heading size={2} lineHeight={1} textColor="secondary">
             Choosing a React Component Library
@@ -81,23 +75,46 @@ export default class Presentation extends React.Component {
           <Table>
             <TableHeader>
               <TableRow>
-                <TableHeaderItem>react-bootstrap</TableHeaderItem>
-                <TableHeaderItem>reactstrap</TableHeaderItem>
+                <TableHeaderItem></TableHeaderItem>
+                <TableHeaderItem bold>react-bootstrap</TableHeaderItem>
+                <TableHeaderItem textAlign="right">reactstrap</TableHeaderItem>
               </TableRow>
             </TableHeader>
             <TableBody>
               <TableRow>
-                <TableItem>None</TableItem>
-                <TableItem>61.8%</TableItem>
+                <TableItem>Version</TableItem>
+                <TableItem>0.32.1</TableItem>
+                <TableItem>4.8.0</TableItem>
               </TableRow>
               <TableRow>
-                <TableItem>jQuery</TableItem>
-                <TableItem>28.3%</TableItem>
+                <TableItem>GitHub Stars</TableItem>
+                <TableItem>12,110</TableItem>
+                <TableItem>3,346</TableItem>
+              </TableRow>
+              <TableRow>
+                <TableItem># Components</TableItem>
+                <TableItem>26</TableItem>
+                <TableItem>26</TableItem>
+              </TableRow>
+              <TableRow>
+                <TableItem># Contributors</TableItem>
+                <TableItem>198</TableItem>
+                <TableItem>79</TableItem>
+              </TableRow>
+              <TableRow>
+                <TableItem>Open Bugs / Issues</TableItem>
+                <TableItem>4 / 43</TableItem>
+                <TableItem>5 / 70</TableItem>
+              </TableRow>
+              <TableRow>
+                <TableItem>License</TableItem>
+                <TableItem>MIT</TableItem>
+                <TableItem>MIT</TableItem>
               </TableRow>
             </TableBody>
           </Table>
         </Slide>
-
+        {bootstrapSlides}
       </Deck>
     );
   }

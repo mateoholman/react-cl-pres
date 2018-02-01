@@ -18,7 +18,7 @@ import {
 import createTheme from "spectacle/lib/themes/default";
 
 // Import images
-import whatisit from '../assets/whatisit.gif';
+import confused from '../assets/confusedgirl.gif';
 
 // Require CSS
 require("normalize.css");
@@ -39,28 +39,19 @@ export default class Presentation extends React.Component {
       <Deck transition={["zoom", "slide"]} transitionDuration={500} theme={theme}>
 
         <Slide transition={["zoom"]} bgColor="primary">
-          <Heading size={1} fit caps lineHeight={1} textColor="secondary">
+          <Heading size={2} lineHeight={1} textColor="secondary">
             Choosing a React Component Library
           </Heading>
           <Cite>Matthew Holman</Cite>
         </Slide>
 
         <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
-          <Heading size={1} textColor="primary">Component Library?</Heading>
-          <BlockQuote>
-            <Quote>A collection of components, organised in a meaningful manner, and often (but not necessarily) providing some way to browse and preview those components and their associated assets.</Quote>
-            <Cite>Mark Perkins</Cite>
-          </BlockQuote>
+          <Heading size={4} textColor="primary">Component Library?</Heading>
+          <img src={confused} />
         </Slide>
 
-        <Slide transition={["fade"]} bgColor="primary" textColor="tertiary">
-          <Heading size={6} textColor="secondary" caps>Standard List</Heading>
-          <List>
-            <ListItem>Item 1</ListItem>
-            <ListItem>Item 2</ListItem>
-            <ListItem>Item 3</ListItem>
-            <ListItem>Item 4</ListItem>
-          </List>
+        <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
+          <Heading size={6} textColor="primary">**Add a screenshot of a component library here to explain.**</Heading>
         </Slide>
 
         <Slide transition={["fade"]} bgColor="secondary" textColor="primary">

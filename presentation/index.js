@@ -13,6 +13,7 @@ import createTheme from "spectacle/lib/themes/default";
 import bootstrapSlides from "./bootstrap";
 import materialSlides from './materialDesign';
 import otherSlides from './other';
+import popSlides from './popular';
 
 // Import images
 import confused from '../assets/confusedgirl.gif';
@@ -68,6 +69,7 @@ export default class Presentation extends React.Component {
         </Slide>
         {bootstrapSlides}
         {materialSlides}
+        {popSlides}
         {otherSlides}
       </Deck>
     );

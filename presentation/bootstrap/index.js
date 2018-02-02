@@ -52,5 +52,8 @@ export default (
         </TableBody>
       </Table>
     </Slide>
+    <Slide transition={["fade"]} bgColor="primary" textColor="secondary">
+      <Heading size={4} textColor="secondary">**Maybe insert some examples of react-bootstrap and reacstrap</Heading>
+    </Slide>
   </div>
 );

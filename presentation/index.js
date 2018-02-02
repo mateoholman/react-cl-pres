@@ -11,6 +11,8 @@ import createTheme from "spectacle/lib/themes/default";
 
 // Import slides
 import bootstrapSlides from "./bootstrap";
+import materialSlides from './materialDesign';
+import otherSlides from './other';
 
 // Import images
 import confused from '../assets/confusedgirl.gif';
@@ -60,12 +62,13 @@ export default class Presentation extends React.Component {
             <ListItem>Help with readable / maintainable code</ListItem>
           </List>
         </Slide>
-
         <Slide transition={["fade"]} bgColor="primary" textColor="secondary">
           <Heading size={4} textColor="secondary">Where do we start?</Heading>
           <img src={confusedfez} />
         </Slide>
         {bootstrapSlides}
+        {materialSlides}
+        {otherSlides}
       </Deck>
     );
   }

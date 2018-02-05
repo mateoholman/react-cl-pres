@@ -11,9 +11,9 @@ export default (
   <Slide>
     <List>
       <ListItem>1</ListItem>
-      <ListItem>2</ListItem>
-      <ListItem>3</ListItem>
-      <ListItem>4</ListItem>
+      <ListItem>Color combinations and keyboard interactions have been carefully crafted to be accessible.</ListItem>
+      <ListItem>TypeScript makes developing with Blueprint faster and more predictable with static types.</ListItem>
+      <ListItem>Styles are built with Sass and designed to be flexible and customizable.</ListItem>
       <ListItem>5</ListItem>
     </List>
   </Slide>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Slide, Heading, Table, TableHeader, TableRow, TableHeaderItem, TableItem, TableBody, Text, List, ListItem, Link } from 'spectacle';
+import { Slide, Heading, Table, TableHeader, TableRow, TableHeaderItem, TableItem, TableBody, Text, List, ListItem, Link, Notes } from 'spectacle';
 
 import md from '../../assets/materialDesignLogo.png';
 
@@ -9,6 +9,7 @@ export default (
     <Slide transition={["fade"]} bgColor="tertiary" textColor="primary">
       <Heading size={4} textColor="secondary">Material Design</Heading>
       <img src={md} width="400" height="400" />
+      <Notes>Google’s UI development paradigm builds on years of research and is familiar to millions of users. It is wildly popular and there are many component libraries based on the Material Design Guidelines.</Notes>
     </Slide>
 
     <Slide transition={["fade"]} bgColor="tertiary" textColor="primary">
@@ -20,6 +21,7 @@ export default (
         <ListItem>React Materialize Web Components</ListItem>
         <ListItem>And more...</ListItem>
       </List>
+      <Notes>As mentioned, there are many React component libraries centered around material design. We'll compare two of the more popular libraries:</Notes>
     </Slide>
 
     <Slide transition={["fade"]} bgColor="tertiary" textColor="primary">
@@ -28,7 +30,7 @@ export default (
           <TableRow>
             <TableHeaderItem></TableHeaderItem>
             <TableHeaderItem><Link href="http://www.material-ui.com/#/components/card" target="new">Material UI</Link></TableHeaderItem>
-            <TableHeaderItem><Link href="http://www.material-ui.com/#/components/card" target="new">React Toolbox</Link></TableHeaderItem>
+            <TableHeaderItem><Link href="http://react-toolbox.io/#/components/card" target="new">React Toolbox</Link></TableHeaderItem>
           </TableRow>
         </TableHeader>
         <TableBody>
@@ -64,6 +66,7 @@ export default (
           </TableRow>
         </TableBody>
       </Table>
+      <Notes>Similar libraries with Materil UI being the more popular of the two. My opinoin is the React Toolbox documentation is a bit better and includes an example playground with each component.</Notes>
     </Slide>
 
   </div>

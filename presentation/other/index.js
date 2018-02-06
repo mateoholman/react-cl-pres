@@ -15,6 +15,7 @@ export default (
     <Slide bgColor="primary">
       <img src={special} />
       <Heading textColor="black" margin="20px">Specialized</Heading>
+      <Notes>We have looked at some of the more popular libaries out there. Now let's take a look at some "specialized" React component libraries:</Notes>
     </Slide>
 
     <Slide bgColor="primary">
@@ -186,7 +187,7 @@ export default (
     </Slide>
 
     <Slide>
-      <Heading textColor="black"><Link href="../../assets/comparisonTable.html" target="new">Comparison Table</Link></Heading>
+      <Heading textColor="black">Comparison Table</Heading>
     </Slide>
 
     <Slide>

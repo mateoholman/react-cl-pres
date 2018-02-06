@@ -8,8 +8,9 @@ import antLogo from '../../assets/antDesignLogo.svg';
 export default (
   <div hasSlideChildren>
     <Slide bgColor="primary">
-      <Heading textColor="black">Popular Libraries</Heading>
+      <Heading textColor="black" margin="20px" size={4}>Popular Libraries (that aren't bootstrap or material design based)</Heading>
       <img src={popular} />
+      <Notes>Now that we have the behemoths out of the way, let's review some libraries that aren't bootstrap or material design based!</Notes>
     </Slide>
 
     <Slide bgColor="primary">
@@ -29,7 +30,7 @@ export default (
     </Slide>
 
     <Slide>
-      <Link href="https://ant.design/components/form/" target="new">Form Example</Link>
+      <Link href="https://ant.design/components/button/" target="new">Button Example</Link>
       <Table>
         <TableBody>
           <TableRow>
@@ -63,7 +64,7 @@ export default (
     <Slide bgColor="primary">
       <img src={sLogo} height="200px" width="200px"/>
       <Heading textColor="black">Semantic UI</Heading>
-      <Notes>Semantic UI is a well polished development framework that helps create beautiful, responsive layouts using human-friendly code.</Notes>
+      <Notes>Semantic UI is a well polished development framework that centers around using "human-friendly" code.</Notes>
     </Slide>
 
     <Slide>

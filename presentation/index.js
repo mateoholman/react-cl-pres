@@ -3,7 +3,7 @@ import React from "react";
 
 // Import Spectacle Core tags
 import {
-  BlockQuote, Cite, Deck, Heading, ListItem, List, Quote, Slide, Table, TableHeader, TableRow, TableHeaderItem, TableItem, TableBody, Text, Link
+  BlockQuote, Cite, Deck, Heading, ListItem, List, Quote, Slide, Table, TableHeader, TableRow, TableHeaderItem, TableItem, TableBody, Text, Link, Notes
 } from "spectacle";
 
 // Import theme
@@ -52,6 +52,7 @@ export default class Presentation extends React.Component {
 
         <Slide transition={["fade"]} align="center" bgColor="secondary" textColor="primary">
           <img src={ss1} width="930px" height="540px" />
+          <Notes>An organized library of re-usable React components. Usually well documented with examples. Sometimes with test coverage. </Notes>
         </Slide>
 
         <Slide transition={["fade"]} bgColor="primary" textColor="secondary">
@@ -62,10 +63,11 @@ export default class Presentation extends React.Component {
             <ListItem>Ship your product faster</ListItem>
             <ListItem>Help with readable / maintainable code</ListItem>
           </List>
+          <Notes>There are many React component libraries that have already been developed, are actively maintained, and are ready to use on your project. Using an existing component library will help keep your code readable and maintainable, speed-up your development and help you ship your product faster. This talk will guide you through some of the available options and help you choose a library that best fits your project!</Notes>
         </Slide>
 
         <Slide>
-          <Heading size={4} textColor="secondary">Great! What are my options?</Heading>
+          <Heading size={4} textColor="secondary" margin="20px">Great! What are my options?</Heading>
           <Table>
             <TableBody>
               <TableRow>
@@ -112,11 +114,13 @@ export default class Presentation extends React.Component {
               </TableRow>
             </TableBody>
           </Table>
+          <Notes>There are a TON of options out there.</Notes>
         </Slide>
 
         <Slide transition={["fade"]} bgColor="primary" textColor="secondary">
           <Heading size={4} textColor="secondary">Uhhhh.....</Heading>
           <img src={confusedfez} />
+          <Notes>So, with all those options out there, where can we start? </Notes>
         </Slide>
         {bootstrapSlides}
         {materialSlides}

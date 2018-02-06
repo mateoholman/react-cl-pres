@@ -1,5 +1,5 @@
 import React from 'react';
-import { Slide, Heading, Table, TableHeader, TableRow, TableHeaderItem, TableItem, TableBody, Text, Link } from 'spectacle';
+import { Slide, Heading, Table, TableHeader, TableRow, TableHeaderItem, TableItem, TableBody, Text, Link, Notes, List, ListItem } from 'spectacle';
 
 import bootstrap from '../../assets/bootstrap.svg';
 
@@ -9,6 +9,7 @@ export default (
     <Slide transition={["fade"]} bgColor="primary" textColor="secondary">
       <Heading size={4} textColor="secondary">Bootstrap</Heading>
       <img src={bootstrap} height="200px" width="200px" />
+      <Notes>Bootstrap is a wildly popular framework. How many people have used it?</Notes>
     </Slide>
 
     <Slide transition={["fade"]} bgColor="primary" textColor="secondary">
@@ -53,6 +54,12 @@ export default (
           </TableRow>
         </TableBody>
       </Table>
+      <Notes>
+        <List>
+          <ListItem>React-bootstrap is in active development, but still on a roadmap for a 1.0.0 release. It currently offers an implementation of Bootstrap 3 styling encapsulated into React components.</ListItem>
+          <ListItem>Reactstrap is an easy to implement component library that already utilizes many of the Bootstrap 4 components.</ListItem>
+        </List>
+      </Notes>
     </Slide>
   </div>
 );

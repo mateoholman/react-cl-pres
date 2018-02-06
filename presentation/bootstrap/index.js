@@ -1,21 +1,23 @@
 import React from 'react';
-import { Slide, Heading, Table, TableHeader, TableRow, TableHeaderItem, TableItem, TableBody, Text } from 'spectacle';
+import { Slide, Heading, Table, TableHeader, TableRow, TableHeaderItem, TableItem, TableBody, Text, Link } from 'spectacle';
 
 import bootstrap from '../../assets/bootstrap.svg';
 
 export default (
   <div hasSlideChildren>
+
     <Slide transition={["fade"]} bgColor="primary" textColor="secondary">
-      <Heading size={4} textColor="secondary">Bootstrap!</Heading>
+      <Heading size={4} textColor="secondary">Bootstrap</Heading>
       <img src={bootstrap} height="200px" width="200px" />
     </Slide>
+
     <Slide transition={["fade"]} bgColor="primary" textColor="secondary">
-      <Table>
+      <Table textAlign="right">
         <TableHeader>
           <TableRow>
             <TableHeaderItem></TableHeaderItem>
-            <TableHeaderItem bold>react-bootstrap</TableHeaderItem>
-            <TableHeaderItem textAlign="right">reactstrap</TableHeaderItem>
+            <TableHeaderItem><Link href="https://react-bootstrap.github.io/components/buttons/" target="new">react-bootstrap</Link></TableHeaderItem>
+            <TableHeaderItem><Link href="http://reactstrap.github.io/components/buttons/" target="new" >reactstrap</Link></TableHeaderItem>
           </TableRow>
         </TableHeader>
         <TableBody>
@@ -51,9 +53,6 @@ export default (
           </TableRow>
         </TableBody>
       </Table>
-    </Slide>
-    <Slide transition={["fade"]} bgColor="primary" textColor="secondary">
-      <Heading size={4} textColor="secondary">**Maybe insert some examples of react-bootstrap and reacstrap</Heading>
     </Slide>
   </div>
 );

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Slide, Heading, Table, TableHeader, TableRow, TableHeaderItem, TableItem, TableBody, Text, List, ListItem, BlockQuote, Quote, Cite, Link } from 'spectacle';
+import { Slide, Heading, Table, TableHeader, TableRow, TableHeaderItem, TableItem, TableBody, Text, List, ListItem, BlockQuote, Quote, Cite, Link, Notes } from 'spectacle';
 
 import popular from '../../assets/atparty.gif';
 import sLogo from '../../assets/semanticLogo.png';
@@ -14,8 +14,8 @@ export default (
 
     <Slide bgColor="primary">
       <img src={antLogo} height="200px" width="200px"/>
-      <Heading textColor="black">Ant Design</Heading>
-      <Heading size={6} textColor="secondary">Ant Design is way more that just a React library or framework. It’s a massive ecosystem with a proprietary style guide, custom Webpack-based build tool and custom CLI applications.</Heading>
+      <Heading textColor="black" margin="20px">Ant Design</Heading>
+      <Notes>Ant Design is way more that just a React library or framework. It’s a massive ecosystem with a proprietary style guide, custom Webpack-based build tool and custom CLI applications.</Notes>
     </Slide>
 
     <Slide>
@@ -24,8 +24,8 @@ export default (
         <ListItem>Used by Alibaba and Baidu</ListItem>
         <ListItem>In-depth design principals</ListItem>
         <ListItem>Complete defined types in TypeScript</ListItem>
-        <ListItem>Some confusing translations</ListItem>
       </List>
+      <Notes>Ant Design is coded and documented in Chinese and has been graciously translated by the community. However, some of the translations are confusing.</Notes>
     </Slide>
 
     <Slide>
@@ -63,12 +63,12 @@ export default (
     <Slide bgColor="primary">
       <img src={sLogo} height="200px" width="200px"/>
       <Heading textColor="black">Semantic UI</Heading>
-      <Heading size={6} textColor="secondary">Semantic UI is a well polished development framework that helps create beautiful, responsive layouts using human-friendly code.</Heading>
+      <Notes>Semantic UI is a well polished development framework that helps create beautiful, responsive layouts using human-friendly code.</Notes>
     </Slide>
 
     <Slide>
       <List>
-        <ListItem>Used in-house by Netflix & Amazon.</ListItem>
+        <ListItem>Used in-house by Netflix & Amazon</ListItem>
         <ListItem>No jQuery dependency</ListItem>
         <ListItem>No animation dependencies</ListItem>
         <ListItem>Simple declarative component APIs</ListItem>
@@ -112,8 +112,8 @@ export default (
     <Slide bgColor="primary">
       <img src={antLogo} height="200px" width="200px"/>
       <Heading textColor="black">Grommet</Heading>
-      <Heading size={6} textColor="secondary">Grommet is a project of Hewlett Packard and reflects the company’s vision of UX best practices. It makes a great first impression thanks to its neat documentation, style guide, and its huge number of available UI components.
-      </Heading>
+      <Notes>Grommet is a project of Hewlett Packard and reflects the company’s vision of UX best practices. It makes a great first impression thanks to its neat documentation, style guide, and its huge number of available UI components.
+      </Notes>
     </Slide>
 
     <Slide>
@@ -121,11 +121,13 @@ export default (
         <ListItem>Enterprise-grade solution</ListItem>
         <ListItem>Full-fledged design language</ListItem>
         <ListItem>Active Slack channel</ListItem>
-        <ListItem>Robust foundation of accessibility features</ListItem>
-        <ListItem>Component structuring is somewhat restrictive</ListItem>
-        <ListItem>Certain components only accepting certain children, nested in a certain way</ListItem>
-        <ListItem>5</ListItem>
+        <ListItem>Robust accessibility features</ListItem>
       </List>
+      <Notes>
+        <List>
+          <ListItem>Component structuring is somewhat restrictive -- Certain components only accepting certain children, nested in a certain way</ListItem>
+        </List>
+      </Notes>
     </Slide>
 
     <Slide>
@@ -159,5 +161,6 @@ export default (
         </TableBody>
       </Table>
     </Slide>
+
   </div>
 );
